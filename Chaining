@@ -1,0 +1,19 @@
+// Without Chaining
+ 
+let characters = ["a", "b", "c"]
+
+let upperCasedChars = characters.map(function(character) {
+    return character.toUpperCase()
+})
+let result = upperCasedChars.includes("B")
+console.log(result) // true
+
+// Using Chaining
+
+let characters = ["a", "b", "c"]
+
+let result = characters.map(function(characters) {
+     return characters.toUpperCase()
+ }).includes("B")
+ 
+ console.log(result) // true
