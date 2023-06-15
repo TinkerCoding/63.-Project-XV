@@ -1,1 +1,30 @@
+/**
+ * @param {array} items
+ * @param {string} item
+ */
+export function addItem(items, item) {
+  items.push(item)
+  return items
+}
 
+/**
+ * @param {array} items
+ */
+export function exportLowerCasedCSV(items) {
+      return items.map(function(item) {
+         return item.toLowerCase()
+        }).join(", ")
+     }
+
+/// The exportLowerCasedCSV can also be done without using chaining
+
+/**
+* @param {array} items
+*/
+export function exportLowerCasedCSV(items) {
+     let result = items.map(function(item) {
+          return item.toLowerCase()
+     })
+     return result.join(", ")
+  }
+ 
